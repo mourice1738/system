@@ -1,0 +1,70 @@
+
+.form_container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form_container .forms{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .form_one{
+        margin-right: 40px;
+    }
+    .form_container form .names input{
+        height: 35px;
+        width: 350px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding-left: 15px;
+        border-radius: 5px;
+        border: 1px  solid #eee;
+        outline: none;
+    }
+    
+
+    }
+    .form_container form .name input{
+        height: 35px;
+        margin-bottom: 10px;
+        width: 163px;
+        border: 1px solid #eee;
+        outline: none;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 16px;
+
+
+
+    }
+    .place_order{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .place_order button{
+        height: 35px;
+        font-size: 16px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: royalblue;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-top: 25px;
+    }
+    .form_two span{
+        margin-left: 100px;
+    }
+    .form_two input{
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        outline: none;
+        padding-left: 10px;
+    }
