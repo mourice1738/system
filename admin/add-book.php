@@ -36,10 +36,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 
+
     
 header('location:index.php');
 }
 else {
+
 
 
 
@@ -89,7 +91,7 @@ if (isset($_POST['add']))
         $pdf = $_FILES['pdf'];
         if ($_FILES['pdf']['type'] == "application/pdf") {
             $source_file = $_FILES['pdf']['tmp_name'];
-            $pdf = $newName = time() . $_FILES['pdf']['name'];
+            $pdf = $newName = time() . str_replace(" ", "_", $_FILES['pdf']['name']);
             $dest_file = "uploads/" . $newName;
 
 
@@ -250,6 +252,7 @@ Book Info
 
 
 
+
     
 $status = 1;
     $sql = "SELECT * from  tblcategory where Status=:status";
@@ -275,6 +278,7 @@ $status = 1;
 <select class="form-control" name="author" required="required">
 <option value=""> Select Author</option>
 <?php
+
 
 
 
